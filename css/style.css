@@ -1,0 +1,155 @@
+body{
+    font-family: 'Spartan', sans-serif;
+}
+p{
+    font-family: 'Spartan', sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/* table section css start */
+.table-sec{
+    background: #f6f9fc;
+}
+.table-heading h2{
+    position: relative;
+}
+.table-heading h2::before {
+    content: "";
+    position: absolute;
+    left: 243px;
+    bottom: -14px;
+    height: 2px;
+    width: 10%;
+    background: rgb(45, 98, 197);
+}
+.table-item{
+    background-color: #fff;
+    padding: 30px 55px;
+    transition: .5s;
+}
+.table-item h1{
+    border-bottom: 1px solid #ddd;
+}
+.table-item:hover{
+    color: #fff;
+    background: rgb(51, 81, 214);
+}
+.table-item ul li{
+    font-size: 20px;
+    margin-top: 15px;
+}
+.table-item:hover.table-item a{
+    color: rgb(51, 81, 214);
+    background-color: #fff;
+}
+.table-item a {
+    display: inline-block;
+    background: rgb(51, 81, 214);
+    color: #fff;
+    border-radius: 30px;
+    padding: 9px 20px;
+    border: 1px solid rgb(51, 81, 214);
+    margin-top: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.table-item a:hover{
+    color: #fff !important;
+}
+.table-item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: rgb(51, 81, 214);
+    transition: .4s;
+    z-index: -1;
+    opacity: 0;
+}
+.table-item a:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+/* banner css start */
+.banner{
+    background: url(../img/free-bg.jpg)
+    no-repeat center center;
+    background-size: cover;
+    padding: 130px 0;
+    color: #fff;
+    background-color: #2e55d6;
+    background-blend-mode: overlay;
+}
+.banner-btn a {
+    background: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner-btn a:hover{
+    color: #fff;
+}
+.banner-btn a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: #2e55d6;
+    transition: .5s;
+    z-index: -1;
+}
+.banner-btn a:hover::before{
+    width: 100%;
+}
+/* news css start*/
+.news-box input {
+    padding: 8px 91px 8px 15px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    outline: none;
+}
+.subscribe-btn a {
+    color: #fff;
+    background: #0d6efd;
+    padding: 11px 20px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.subscribe-btn a:hover{
+    color: #fff;
+}
+.right-box{
+    height: 270px;
+}
+.right-box h4 {
+    margin-bottom: 127px;
+}
+.right-box a {
+    color: #fff;
+    background: #0d6efd;
+    padding: 8px 24px;
+    border-radius: 30px;
+}
+.right-box a:hover{
+    color: #fff;
+}
